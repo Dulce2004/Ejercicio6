@@ -13,5 +13,5 @@ public class Computadora extends ElectroTech {
         this.tamanoDisco = tamanoDisco;
         this.tipoDisco = tipoDisco;
     }
-
+    //realizar comentarios
 }

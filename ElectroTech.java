@@ -98,5 +98,4 @@ public class ElectroTech implements ProductoInterfaz {
         // TODO Auto-generated method stub
 
     }
-
 }
