@@ -1,18 +1,31 @@
-public class ElectroTech implements ProductoInterfaz {
+
+/**
+ * Esta clase es donde se crea la implementacion con la interfaz y se vuelve la clase padre
+ * 
+ * @author: Dulce Ambrosio - 231143 , sección 20
+ * @version: 29/10/2023
+ */
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public abstract class ElectroTech implements ProductoInterfaz {
     protected double precio;
     protected int visaCuotas;
     protected String marca;
     protected String modelo;
     protected String estadoDispositivo;
     protected int ram;
-    protected String video;
+    protected int video;
     protected int volumen;
     protected int brillo;
     protected String videoMostrado;
     protected String tipo;
 
+    /*
+     * Class constructor
+     */
     public ElectroTech(double precio, int visaCuotas, String marca, String modelo, String estadoDispositivo, int ram,
-            String video, int volumen, int brillo, String videoMostrado, String tipo) {
+            int video, int volumen, int brillo, String videoMostrado, String tipo) {
         this.precio = precio;
         this.visaCuotas = visaCuotas;
         this.marca = marca;
@@ -27,75 +40,189 @@ public class ElectroTech implements ProductoInterfaz {
 
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        // TODO Auto-generated method stub
-        return super.clone();
+    /*
+     * setters y getters
+     */
+    public double getPrecio() {
+        return precio;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        // TODO Auto-generated method stub
-        return super.equals(obj);
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 
-    @Override
-    protected void finalize() throws Throwable {
-        // TODO Auto-generated method stub
-        super.finalize();
+    public int getVisaCuotas() {
+        return visaCuotas;
     }
 
-    @Override
-    public int hashCode() {
-        // TODO Auto-generated method stub
-        return super.hashCode();
+    public void setVisaCuotas(int visaCuotas) {
+        this.visaCuotas = visaCuotas;
     }
 
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+    public String getMarca() {
+        return marca;
     }
 
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getEstadoDispositivo() {
+        return estadoDispositivo;
+    }
+
+    public void setEstadoDispositivo(String estadoDispositivo) {
+        this.estadoDispositivo = estadoDispositivo;
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
+    public int getVideo() {
+        return video;
+    }
+
+    public void setVideo(int video) {
+        this.video = video;
+    }
+
+    public int getVolumen() {
+        return volumen;
+    }
+
+    public void setVolumen(int volumen) {
+        this.volumen = volumen;
+    }
+
+    public int getBrillo() {
+        return brillo;
+    }
+
+    public void setBrillo(int brillo) {
+        this.brillo = brillo;
+    }
+
+    public String getVideoMostrado() {
+        return videoMostrado;
+    }
+
+    public void setVideoMostrado(String videoMostrado) {
+        this.videoMostrado = videoMostrado;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    /**
+     * Métodos implementado de la interfaz para subir el brillo
+     * 
+     * @param param1 los valores son de tipo String
+     * @return devuelve un String
+     */
     @Override
     public void aumentarBrillo() {
-        // TODO Auto-generated method stub
 
     }
 
+    /**
+     * Métodos implementado de la interfaz para bajar el brillo
+     * 
+     * @param param1 los valores son de tipo String
+     * @return devuelve un String
+     */
     @Override
     public void bajarVolumen() {
-        // TODO Auto-generated method stub
 
     }
 
+    /**
+     * Métodos implementado de la interfaz para controlar los videos
+     * 
+     * @param param1 los valores son de tipo String
+     * @return devuelve un String
+     */
     @Override
     public void controlarVideos() {
-        // TODO Auto-generated method stub
 
     }
 
+    /**
+     * Métodos implementado de la interfaz para disminuir el brillo
+     * 
+     * @param param1 los valores son de tipo String
+     * @return devuelve un String
+     */
     @Override
     public void disminuirBrillo() {
-        // TODO Auto-generated method stub
 
     }
 
+    /**
+     * Métodos implementado de la interfaz para mostrar el estado actual del
+     * dispositivo
+     * 
+     * @param param1 los valores son de tipo String
+     * @return devuelve un String
+     */
     @Override
     public void mostrarEstadoactual() {
-        // TODO Auto-generated method stub
+        System.out.println("Estado del dispositivo: " + estadoDispositivo);
+        System.out.println("Volumen: " + volumen);
+        System.out.println("Brillo: " + brillo);
+        System.out.println("Num de video mostrado: " + video);
+        System.out.println("Estado del video: ");
 
     }
 
+    /**
+     * Métodos implementado de la interfaz para mostrar la información
+     * 
+     * @param param1 los valores son de tipo String
+     * @return devuelve un String
+     */
     @Override
     public void mostrarInformacion() {
-        // TODO Auto-generated method stub
+
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Precio: " + precio);
+        System.out.println("VisaCuotas: " + visaCuotas);
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("RAM: " + ram);
+        System.out.println("Estado del Dispositivo: " + estadoDispositivo);
+        System.out.println("Número de video: " + video);
+        System.out.println("Volumen: " + volumen);
+        System.out.println("Brillo: " + brillo);
+        System.out.println("Estado del Video: " + videoMostrado);
 
     }
 
+    /**
+     * Métodos implementado de la interfaz para subir el volumen
+     * 
+     * @param param1 los valores son de tipo String
+     * @return devuelve un String
+     */
     @Override
     public void subirVolumen() {
-        // TODO Auto-generated method stub
 
     }
 

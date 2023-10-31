@@ -1,1 +1,6 @@
-Computadora, 6499, 12, DELL, SKU 671NC, 8, Encendido, 1, 12, 15, Pausa, 3, 4, 512, SSD 
+﻿Telefono,2499.00,10,Motorola,Edge 30 ,6,Encendido,1,2,3,pausa,Soc Qualcomm Snapdragon,128,True,True,False,x,x,x,x
+Telefono,2496.00,12,Samsung,Galaxy A34,6,Apagado,2,4,6,reproducir,Octa Core,128,False,False,True,x,x,x,x
+Telefono,5996.00,12,Apple,Iphone 12,x,Encendido,3,6,9,pausa,Apple 14,128,False,False,True,x,x,x,x
+Computadora,6499.00,12,DELL,SKU 671NC,8,Apagado,4,10,5,reproducir,AMD RYZEN 7,x,x,x,x,SSD,512,4,4
+Computadora,2998.00,12,HP,SKU HP14CK2098LA,4,Encendido,5,20,10,pausa,Intel Core i3,x,x,x,x,SSD,500,4,4
+Computadora,4998.00,12,HACER,SKU NXA6PAL003,8,Apagado,1,30,15,reproducir,Intel Core i5,x,x,x,x,SSD,1000,3,3
